@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white p-5">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Portfolio</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#home" class="hover:underline">Home</a></li>
+            <li><a href="#projects" class="hover:underline">Projects</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center h-64"
+      style="background-image: url('path/to/your/image.jpg')"
+    >
+      <div
+        class="flex items-center justify-center h-full bg-black bg-opacity-50"
+      >
+        <h2 class="text-white text-4xl font-bold">Hello, I'm Oubay Arfaoui</h2>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-10">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-semibold text-center mb-5">My Skills</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="bg-white p-5 rounded shadow">
+            <h4 class="font-bold">HTML</h4>
+          </div>
+          <div class="bg-white p-5 rounded shadow">
+            <h4 class="font-bold">CSS</h4>
+          </div>
+          <div class="bg-white p-5 rounded shadow">
+            <h4 class="font-bold">JavaScript</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-10">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-semibold text-center mb-5">My Projects</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="bg-white p-5 rounded shadow">
+            <img
+              src="https://mikkegoes.com/wp-content/uploads/2023/01/The-first-HTML-WWW-website-ever-built.png"
+              alt="Project"
+              class="w-full h-32 object-cover rounded"
+            />
+            <h4 class="font-bold mt-2">Project Title</h4>
+            <p>A short description of the project.</p>
+          </div>
+          <!-- Repeat for more projects -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-10">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-semibold text-center mb-5">Contact Me</h3>
+        <form class="bg-white p-5 rounded shadow max-w-md mx-auto">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="border p-2 w-full mb-4"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="border p-2 w-full mb-4"
+            required
+          />
+          <textarea
+            placeholder="Your Message"
+            class="border p-2 w-full mb-4"
+            required
+          ></textarea>
+          <button type="submit" class="bg-blue-600 text-white p-2 rounded">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-5">
+      <div class="container mx-auto flex justify-between items-center">
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:underline">Facebook</a>
+          <a href="#" class="hover:underline">Twitter</a>
+          <a href="#" class="hover:underline">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
